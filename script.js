@@ -1,4 +1,3 @@
-// ------------------ PAGE SWITCH ------------------
 function showPage(page) {
   document.getElementById("pageDashboard").style.display = "none";
   document.getElementById("pageMahasiswa").style.display = "none";
