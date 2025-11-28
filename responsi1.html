@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="sidebar">
+    <h2>ADMIN</h2>
+    <nav>
+      <a id="menuDashboard" class="active">Dashboard</a>
+      <a id="menuMahasiswa">Data Mahasiswa</a>
+      <a id="menuSetting">Pengaturan</a>
+      <a id="menuAbout">Tentang</a>
+    </nav>
+  </div>
+
+  <div class="main">
+
+    <section id="pageDashboard">
+      <h1>Dashboard</h1>
+
+      <div class="stats">
+        <div class="stat-card">
+          <h3>Total Data</h3>
+          <p id="totalData">0</p>
+        </div>
+
+        <div class="stat-card">
+          <h3>Prodi Unit</h3>
+          <p id="totalProdi">0</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pageMahasiswa" style="display:none;">
+      <h1>Data Mahasiswa</h1>
+
+      <div class="card">
+        <h3>Tambah Data Mahasiswa</h3>
+
+        <form id="formData">
+          <input type="text" id="nama" placeholder="Nama" required>
+          <input type="text" id="nim" placeholder="NIM" required>
+          <input type="text" id="prodi" placeholder="Prodi" required>
+          <button class="btn" type="submit">Tambah</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h3>Daftar Data Mahasiswa</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama</th>
+              <th>NIM</th>
+              <th>Prodi</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody id="tabelBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="pageSetting" style="display:none;">
+      <h1>Pengaturan</h1>
+      <div class="card">
+        <p>Pengaturan Belum Terfikir</p>
+      </div>
+    </section>
+
+    <section id="pageAbout" style="display:none;">
+      <h1>Tentang</h1>
+      <div class="card">
+        <p>Dashboard admin sederhana.</p>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
